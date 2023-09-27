@@ -20,7 +20,7 @@ function FormLogin() {
     const Logar = (e) => {
         e.preventDefault();
 
-        axios.post('http://127.0.0.1:5000/Login', {
+        axios.post('https://batida-de-ponto-api-flask.vercel.app/', {
             usuario: usuario,
             senha: senha
         })

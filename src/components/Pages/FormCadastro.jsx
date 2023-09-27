@@ -14,7 +14,7 @@ function Cadastro() {
     }
 
     try {
-      const response = await axios.post('http://127.0.0.1:5000/cadastro', novoUsuario);
+      const response = await axios.post('https://batida-de-ponto-api-flask.vercel.app/', novoUsuario);
       alert(response.data.message);
       navigate('/');
     } catch (error) {
