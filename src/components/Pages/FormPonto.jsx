@@ -36,7 +36,7 @@ function FormPonto() {
     
         console.log(`Usuário ${user} bateu ponto as: ${hora}`);
     
-        axios.post('https://pagina-batida-ponto.vercel.app/Ponto', {
+        axios.post('https://batida-de-ponto-api-flask.vercel.app/Ponto', {
             usuario: user,
             hora: hora
         },
