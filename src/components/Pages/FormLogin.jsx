@@ -20,7 +20,7 @@ function FormLogin() {
     const Logar = (e) => {
         e.preventDefault();
 
-        axios.post('https://batida-de-ponto-api-flask.vercel.app/', {
+        axios.post('https://batida-de-ponto-api-flask.vercel.app/Login', {
             usuario: usuario,
             senha: senha
         })
