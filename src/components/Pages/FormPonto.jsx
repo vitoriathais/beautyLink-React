@@ -36,7 +36,7 @@ function FormPonto() {
     
         console.log(`Usuário ${user} bateu ponto as: ${hora}`);
     
-        axios.post('http://127.0.0.1:5000/Ponto', {
+        axios.post('https://pagina-batida-ponto.vercel.app/', {
             usuario: user,
             hora: hora
         },
