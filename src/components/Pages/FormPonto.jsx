@@ -46,7 +46,7 @@ function FormPonto() {
             console.log(response.data.message);
             if (response.data.message === 'Ponto batido com sucesso') {
                 window.alert('Ponto Batido com sucesso!');
-                window.location.href = '/';
+                navigate('/');
             }
         })
         .catch((error) => {
