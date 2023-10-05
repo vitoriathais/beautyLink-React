@@ -72,6 +72,15 @@ function FormPonto() {
                     <p className="fake-input">{user}</p>
                 </div>
                 <div>
+                    <label className="title-label-senha" htmlFor="hora">Hora: </label>
+
+                    <input className="input" type="time"
+                    id="hora"
+                    name="hora" 
+                    placeholder="Insira o horário atual"
+                    onChange={(e) => setHora(e.target.value)} />
+                </div>
+                <div>
                     <button type="button" className="style-ponto" onClick={() => setMostrarModal(true)}>Bater Ponto</button>
                 </div>
                 <div>
