@@ -1,3 +1,7 @@
+* {
+  color: white;
+}
+
 #root {
     max-width: 1280px;
     margin: 0 auto;
@@ -58,7 +62,7 @@
   .login-form-title {
     display: block;
     font-size: 30px;
-    color: azure;
+    color: rgb(255, 255, 255);
 
     padding-bottom: px;
     line-height: 1.2;
@@ -124,6 +128,8 @@
     padding: 2px;
     margin-top: 45px;
     font-size: 17.5px;
+    color: white;
+    font-weight: 450;
   }
 
   .title-label-senha {
@@ -308,7 +314,7 @@
   text-align: center;
   width: 345px;
   height: 140px;
-  color: rgb(243, 243, 243);
+  color: rgb(255, 255, 255);
 }
 
 .style-confirma-ponto {
@@ -334,4 +340,12 @@
 
 .frase-redireciona {
   height: 50px;
+}
+
+.identificaçao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 13px;
 }

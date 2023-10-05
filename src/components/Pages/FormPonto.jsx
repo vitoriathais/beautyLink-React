@@ -67,7 +67,7 @@ function FormPonto() {
         <div className="wrap-ponto">
             <h1 className="login-form-title">Batida de Ponto:</h1>
             <form onSubmit={BaterPonto}>
-                <div>
+                <div className="identificaçao">
                     <label className="title-label-usuario" htmlFor="usuario">Usuario: </label>
                     <p className="fake-input">{user}</p>
                 </div>
