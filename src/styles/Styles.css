@@ -235,7 +235,7 @@
 
   .wrap-ponto {
     width: 500px;
-    height: 330px;
+    height: 181px;
     position: absolute;
     background-color:#2e2b3f38 ;
     border-radius: 10px;
@@ -329,9 +329,6 @@
 
 
 .container__ponto__button {
-  border: 1px solid red;
+  margin-top: -66px;
 }
 
-.container__ponto__button > button {
-  border: 1px solid blue;
-}
