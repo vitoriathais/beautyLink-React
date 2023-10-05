@@ -20,6 +20,10 @@ function FormLogin() {
     const Logar = (e) => {
         e.preventDefault();
 
+        if (!usuario || !senha) {
+            window.alert('Por favor, insira o usuário e a senha.');
+            return; }
+
         axios.post('https://batida-de-ponto-api-flask.vercel.app/Login', {
             usuario: usuario,
             senha: senha
