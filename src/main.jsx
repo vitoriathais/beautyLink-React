@@ -7,7 +7,6 @@ import FormCadastro from './components/Pages/FormCadastro';
 import FormPonto from './components/Pages/FormPonto';
 import './index.css'
 import PageError from './components/Pages/PageError';
-import PageConfig from './components/Pages/PageConfig';
 
 const Rotas=createBrowserRouter([
     { path: "/", 
