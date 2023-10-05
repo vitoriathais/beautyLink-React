@@ -331,3 +331,7 @@
 .container__ponto__button {
   border: 1px solid red;
 }
+
+.container__ponto__button > button {
+  border: 1px solid blue;
+}
