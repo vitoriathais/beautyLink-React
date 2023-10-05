@@ -23,7 +23,6 @@ function ConfirmAcao({mensagem, onConfirm, onCancel}) {
 
 function FormPonto() {
     const { user } = useContext(UserContext);
-    const [hora, setHora] = useState();
     const [mostrarModal, setMostrarModal] = useState(false);
     const navigate = useNavigate();
 
@@ -35,11 +34,10 @@ function FormPonto() {
     const BaterPonto = (e) => {
         e.preventDefault();
     
-        console.log(`Usuário ${user} bateu ponto as: ${hora}`);
+        console.log(`Usuário ${user} bateu ponto`);
     
         axios.post('https://batida-de-ponto-api-flask.vercel.app/Ponto', {
             usuario: user,
-            hora: hora
         },
         {
             withCredentials: true
@@ -73,15 +71,6 @@ function FormPonto() {
                     <p className="fake-input">{user}</p>
                 </div>
                 <div>
-                    <label className="title-label-senha" htmlFor="hora">Hora: </label>
-
-                    <input className="input" type="time"
-                    id="hora"
-                    name="hora" 
-                    placeholder="Insira o horário atual"
-                    onChange={(e) => setHora(e.target.value)} />
-                </div>
-                <div>
                     <button type="button" className="style-ponto" onClick={() => setMostrarModal(true)}>Bater Ponto</button>
                 </div>
                 <div>
@@ -90,7 +79,7 @@ function FormPonto() {
                 </div>
                 {mostrarModal && (
                     <ConfirmAcao
-                    mensagem = {`Horário do Ponto: ${hora}`}
+                    mensagem = {`Você está batendo ponto?`}
                     onCofirm={() => { BaterPonto(); setMostrarModal(false);}}
                     onCancel={() => setMostrarModal(false)}
                     />
