@@ -71,7 +71,7 @@ function FormPonto() {
                     <label className="title-label-usuario" htmlFor="usuario">Usuario: </label>
                     <p className="fake-input">{user}</p>
                 </div>
-                <div>
+                <div className="container__ponto__button">
                     <button type="button" className="style-ponto" onClick={() => setMostrarModal(true)}>Bater Ponto</button>
                 </div>
                 <div>

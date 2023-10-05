@@ -326,3 +326,8 @@
   color: #000000;
   margin-left: 20px;
 }
+
+
+.container__ponto__button {
+  border: 1px solid red;
+}
