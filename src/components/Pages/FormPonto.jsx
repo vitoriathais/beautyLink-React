@@ -33,7 +33,7 @@ function FormPonto() {
     
     // Função para obter a hora da API
     const atualizarHora = () => {
-        axios.get('https://sua-api.com/hora')
+        axios.get('https://batida-de-ponto-api-flask.vercel.app/Hora')
             .then(response => {
                 // Atualiza o estado com a hora retornada pela API
                 setHora(response.data.hora);
