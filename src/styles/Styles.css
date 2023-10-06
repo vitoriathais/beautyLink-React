@@ -349,3 +349,16 @@
     align-items: flex-start;
     margin-left: 13px;
 }
+
+.horario {
+  display: flex;
+  flex-direction: row;
+}
+
+.horario > p {
+  border: solid 1px white;
+}
+
+.horario > label {
+  display: flex;
+}

@@ -87,20 +87,26 @@ function FormPonto() {
         <div className="wrap-ponto">
             <h1 className="login-form-title">Batida de Ponto:</h1>
             <form onSubmit={BaterPonto}>
+
                 <div className="identificaçao">
                     <label className="title-label-usuario" htmlFor="usuario">Usuario: </label>
                     <p className="fake-input">{user}</p>
                 </div>
-                <div>
-                <p>Horário atual: {hora}</p> {/* Exibe a hora */}
+
+                <div className="horario">
+                    <label>Horário:</label>
+                    <p>{hora}</p> {/* Exibe a hora */}
                 </div>
+
                 <div className="container__ponto__button">
                     <button type="button" className="style-ponto" onClick={() => setMostrarModal(true)}>Bater Ponto</button>
                 </div>
+
                 <div className="frase-redireciona">
                     <p className="style-pergunta">Deseja ir para a página de login?</p>
                     <button className="style-criar-cadastro" onClick={linkLogin}>Login</button>
                 </div>
+
                 {mostrarModal && (
                     <ConfirmAcao
                     mensagem = {`Você está batendo ponto?`}
