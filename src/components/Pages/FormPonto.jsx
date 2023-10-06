@@ -37,6 +37,7 @@ function FormPonto() {
             .then(response => {
                 // Atualiza o estado com a hora retornada pela API
                 setHora(response.data.hora);
+                console.log(hora)
             })
             .catch(error => console.error('Erro:', error));
     };
