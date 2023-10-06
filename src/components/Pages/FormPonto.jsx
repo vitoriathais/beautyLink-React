@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { UserContext } from './UserContext';
-import { useState } from 'react';
 import '../../styles/Styles.css';
 import axios from 'axios';
 import {useNavigate} from 'react-router-dom'
@@ -21,15 +20,36 @@ function ConfirmAcao({mensagem, onConfirm, onCancel}) {
 
 
 
+
+
 function FormPonto() {
     const { user } = useContext(UserContext);
     const [mostrarModal, setMostrarModal] = useState(false);
     const navigate = useNavigate();
 
+    const [hora, setHora] = useState('')
+
     const linkLogin = () => {
         return navigate ('/');
     }
     
+
+    const atualizarHora = () => { // Nova função
+        axios.get('https://batida-de-ponto-api-flask.vercel.app/Ponto') // Substitua pelo endpoint da sua API
+            .then(response => {
+                // Atualiza o estado com a hora retornada pela API
+                setHora(response.data.hora);
+            })
+            .catch(error => console.error('Erro:', error));
+    };
+
+    // Atualiza a hora assim que o componente é montado e a cada 60 segundos
+    useEffect(() => { 
+        atualizarHora();
+        const intervalId = setInterval(atualizarHora, 60000);
+        return () => clearInterval(intervalId); // Limpa o intervalo quando o componente é desmontado
+    }, []);
+
 
     const BaterPonto = (e) => {
         e.preventDefault();
@@ -70,6 +90,9 @@ function FormPonto() {
                 <div className="identificaçao">
                     <label className="title-label-usuario" htmlFor="usuario">Usuario: </label>
                     <p className="fake-input">{user}</p>
+                </div>
+                <div className="horario">
+                <p>Horário atual: {hora}</p> {/* Exibe a hora */}
                 </div>
                 <div className="container__ponto__button">
                     <button type="button" className="style-ponto" onClick={() => setMostrarModal(true)}>Bater Ponto</button>
