@@ -1,9 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 
+const dados = [
+    { data: '10/10/2023', entradaSaida: '08:00/18:00', horasExtras: '2', horasFaltas: '0', saldo: '2', solicitacao: 'N/A', acoes: '✔️' },
+  ];
+
 function EspelhoPonto() {
   return (
-    <div>
+    <div className="Espelho">
       <h1>Meu Ponto</h1>
       <table>
         <thead>
@@ -18,7 +22,17 @@ function EspelhoPonto() {
           </tr>
         </thead>
         <tbody>
-          {/* Aqui você pode mapear seus dados para criar as linhas da tabela */}
+        {dados.map((linha, index) => (
+        <tr key={index}>
+          <td>{linha.data}</td>
+          <td>{linha.entradaSaida}</td>
+          <td>{linha.horasExtras}</td>
+          <td>{linha.horasFaltas}</td>
+          <td>{linha.saldo}</td>
+          <td>{linha.solicitacao}</td>
+          <td>{linha.acoes}</td>
+        </tr>
+      ))}
         </tbody>
       </table>
     </div>

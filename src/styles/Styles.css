@@ -382,3 +382,17 @@
     color: #fff;
     font-weight: 400;
 }
+
+.Espelho > table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Espelho > table, th, td {
+  border: 1px solid black;
+}
+
+.Espelho > th, td {
+  padding: 15px;
+  text-align: left;
+}
