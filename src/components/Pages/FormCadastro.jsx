@@ -27,6 +27,10 @@ function Cadastro() {
     }
   };
 
+  const linkLogin = () => {
+    return navigate ('/');
+  }
+
 
   return (
     <div className="wrap-cadastro">
@@ -77,6 +81,11 @@ function Cadastro() {
         />
 
         <button className="style-cadastrar" onClick={handleCriarUsuario}>Cadastrar</button>
+
+        <div className="frase-redireciona">
+                    <p className="style-pergunta">Deseja ir para a página de login?</p>
+                    <button className="style-criar-cadastro" onClick={linkLogin}>Login</button>
+                </div>
       </div>
   );
 }
