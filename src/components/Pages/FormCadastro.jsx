@@ -33,8 +33,8 @@ function Cadastro() {
       <h1>Tela Cadastro</h1>
         <label className="title-label-usuario" htmlFor="name">Nome: </label>
 
-        <input className="input" type="text"  
-        name="name" 
+        <input className="input" type="text"
+        name="name"
         placeholder="Digite o seu nome..."
           value={novoUsuario.nome}
           onChange={(e) => setNovoUsuario({ ...novoUsuario, nome: e.target.value })}
@@ -61,7 +61,7 @@ function Cadastro() {
         <label className="title-label-senha" htmlFor="password">Senha: </label>
 
         <input className="input" type="password"
-        name="password" 
+        name="password"
         placeholder="Crie sua senha..."
         value={novoUsuario.senha}
         onChange={(e) => setNovoUsuario({ ...novoUsuario, senha: e.target.value })}
