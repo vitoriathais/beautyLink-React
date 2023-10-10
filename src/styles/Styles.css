@@ -167,7 +167,8 @@
 
 
   .style-pergunta {
-    display:inline-flex
+    display:inline-flex;
+    margin-top: 15px;
   }
 
   .wrap-cadastro {
@@ -267,7 +268,7 @@
     background-color: #fffe;
     cursor: pointer;
     transition: border-color .25s;
-    margin-top: 90px;
+    margin-top: 105px;
     margin-bottom: -26px;
     color: #000;
   }
@@ -366,7 +367,7 @@
     display: flex;
     align-items: center;
     height: 23px;
-    margin-top: 41px;
+    margin-top: 44px;
     margin-left: -63px;
     width: 100%;
     font-weight: 400;
