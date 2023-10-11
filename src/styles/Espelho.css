@@ -6,7 +6,7 @@
     gap: 5px;
 }
 
-.container > div {
+.container-espelho > div {
     background-color: #ccc;
     padding: 20px;
     border: 1px solid blue;
