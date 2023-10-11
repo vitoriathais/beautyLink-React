@@ -309,32 +309,62 @@
 }
 
 .modal-content {
-  background-color: #2e2b3f;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgb(0 0 0);
-  font-family: inherit;
-  font-size: 18px;
-  text-align: center;
-  width: 345px;
-  height: 140px;
-  color: rgb(255, 255, 255);
+    background-color: #2e2b3f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    font-family: inherit;
+    font-size: 18px;
+    text-align: center;
+    width: 345px;
+    height: 140px;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .style-confirma-ponto {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: -.40000000000000036em -66.8em;
+    font-size: .9em;
+    font-weight: 550;
+    font-family: inherit;
+    background-color: #fffe;
+    cursor: pointer;
+    transition: .25s;
+    margin-top: 18px;
+    margin-bottom: -35px;
+    color: #000;
+    /* margin-left: 20px; */
+    display: flex;
+    align-items: flex-start;
+    /* margin-right: 10px; */
+    margin-left: 0px;
+    flex-direction: row;
+}
+
+.style-confirma-ponto-fechar { 
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: -0.40000000000000036em -66.8em;
-  font-size: 0.9em;
-  font-weight: 550;
-  font-family: inherit;
-  background-color: #ffffffee;
-  cursor: pointer;
-  transition: 0.25s;
-  margin-top: 18px;
-  margin-bottom: -35px;
-  color: #000000;
-  margin-left: 20px;
+    border: 1px solid transparent;
+    padding: -.40000000000000036em -66.8em;
+    font-size: .9em;
+    font-weight: 550;
+    font-family: inherit;
+    background-color: #fffe;
+    cursor: pointer;
+    transition: .25s;
+    margin-top: 18px;
+    margin-bottom: -35px;
+    color: #000;
+    /* margin-left: 20px; */
+    display: flex;
+    align-items: flex-start;
+    /* margin-right: 10px; */
+    margin-left: 0px;
+    flex-direction: row;
 }
 
 
@@ -389,7 +419,7 @@
 }
 
 .Espelho > table, th, td {
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 .Espelho > th, td {

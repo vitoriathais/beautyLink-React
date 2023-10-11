@@ -12,7 +12,7 @@ function ConfirmAcao({mensagem, onConfirm, onCancel}) {
           <div className="modal-content">
             <p>{mensagem}</p>
             <button className="style-confirma-ponto" onClick={onConfirm}>Confirmar</button>
-            <button className="style-confirma-ponto" onClick={onCancel}>Fechar</button>
+            <button className="style-confirma-ponto-fechar" onClick={onCancel}>Fechar</button>
           </div>
         </div>
     )
