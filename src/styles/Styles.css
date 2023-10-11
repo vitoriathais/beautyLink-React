@@ -309,39 +309,43 @@
 }
 
 .modal-content {
-  background-color: #2e2b3f;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #000;
-  font-family: inherit;
-  font-size: 18px;
-  text-align: center;
-  width: 345px;
-  height: 140px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    background-color: #2e2b3f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    font-family: inherit;
+    font-size: 18px;
+    text-align: center;
+    width: 345px;
+    height: 140px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .button-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 80%;
 }
 
 .style-confirma-ponto, .style-confirma-ponto-fechar {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: .4em .6em; /* ajuste o padding conforme necessário */
-  font-size: .9em;
-  font-weight: 550;
-  font-family: inherit;
-  background-color: #fffe;
-  cursor: pointer;
-  transition: .25s;
-  color: #000;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.4em 0.6em;
+    font-size: .9em;
+    font-weight: 550;
+    font-family: inherit;
+    background-color: #fffe;
+    cursor: pointer;
+    transition: .25s;
+    color: #000;
+    margin: auto;
+    margin-top: 65px;
+    width: 100px;
 }
 
 
