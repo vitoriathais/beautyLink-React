@@ -330,6 +330,7 @@
     display: flex;
     justify-content: center;
     width: 80%;
+    margin-top: -26px;
 }
 
 .style-confirma-ponto, .style-confirma-ponto-fechar {
@@ -342,6 +343,7 @@
     background-color: #fffe;
     cursor: pointer;
     transition: .25s;
+    height: 43px;
     color: #000;
     margin: auto;
     margin-top: 65px;
