@@ -18,10 +18,10 @@ function EspelhoPonto() {
 
         <div id="Container-sidebar">
           <div className="Container-sidebar__Ponto">
-            <p style="color: black">Ponto</p>
+            <p style={{color: "black"}}>Ponto</p>
           </div>
           <div className="Container-sidebar__Espelho">
-           <p style="color: black">Espelho</p>
+           <p style={{color: "black"}}>Espelho</p>
           </div>
         </div>
       </div>
