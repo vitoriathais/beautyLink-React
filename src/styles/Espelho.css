@@ -23,18 +23,19 @@
 #header {
     grid-area: header;
     height: 0vh;
+    width: 138vh;
 }
 
 #sidebar {
     grid-area: sidebar;
-    width: 15vh;
-    height: 55vh;
+    width: 26vh;
+    height: 69vh
 }
 
 #content {
     grid-area: content;
-    width: 99vh;
-    height: 55vh;
+    width: 105vh;
+    height: 69vh;
 }
 
 #footer {
