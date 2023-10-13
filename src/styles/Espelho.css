@@ -41,12 +41,9 @@
     height: 69vh;
 }
 
-#footer {
-    grid-area: footer;
-}
 
-.Container-sidebar {
-border: solid 1px green;
+.Container-sidebar > p {
+    color: black;
 }
 
 .Container-sidebar__Espelho {
@@ -54,10 +51,4 @@ border: solid 1px green;
     background-color: rgb(230 230 230);
 }
 
-.Container-sidebar__Ponto {
-    color: black;
-}
 
-.container-espelho > p, h1 {
-    color: black;
-}
