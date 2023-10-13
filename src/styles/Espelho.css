@@ -1,4 +1,3 @@
-
 .container-espelho {
         background-color: #333;
         border: 3px solid red;
@@ -42,7 +41,7 @@
 }
 
 
-.Container-sidebar > p {
+#Container-sidebar > p {
     color: black;
 }
 
@@ -51,6 +50,11 @@
     background-color: rgb(230 230 230);
 }
 
-p {
-    color: black
+
+#Container-sidebar {
+    margin-top: 0px;
+    margin-top: -20px;
+    border: 1px solid black;
+    width: 266px;
+    margin-left: -20px;
 }

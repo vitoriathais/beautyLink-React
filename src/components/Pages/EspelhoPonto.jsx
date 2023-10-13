@@ -16,7 +16,7 @@ function EspelhoPonto() {
 
       <div id="sidebar">
 
-        <div className="Container-sidebar">
+        <div id="Container-sidebar">
           <div className="Container-sidebar__Ponto">
             <p>Bater Ponto</p>
           </div>
