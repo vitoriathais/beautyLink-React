@@ -28,14 +28,10 @@ function EspelhoPonto() {
       </div>
 
       <div id="content">
-        <div className="container-content">
         <h1>Espelho</h1>
-          <div className="container-content_externo">
-              <div>
-                
-              </div>
+          <div className="container-content">
+
           </div>
-        </div>
       </div>
 
     </div>
