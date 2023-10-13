@@ -28,9 +28,11 @@
 }
 
 #sidebar {
-    grid-area: sidebar;
-    width: 26vh;
-    height: 69vh
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    margin-left: -21px;
+    margin-top: -15px;
 }
 
 #content {
@@ -48,9 +50,14 @@ border: solid 1px green;
 }
 
 .Container-sidebar__Espelho {
-    border: solid 1px grey;
+    border: solid 1px #d4d4d4;
+    background-color: rgb(230 230 230);
 }
 
 .Container-sidebar__Ponto {
-    border: solid 1px yellow;
+    color: black;
+}
+
+.container-espelho > p, h1 {
+    color: black;
 }
