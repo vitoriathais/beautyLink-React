@@ -2,7 +2,6 @@
 .container-espelho {
         background-color: #333;
         border: 3px solid red;
-        color: black;
         width: 1020px;
         height: 577px;
         padding: 15px;
@@ -52,4 +51,6 @@
     background-color: rgb(230 230 230);
 }
 
-
+p {
+    color: black
+}
