@@ -40,6 +40,14 @@
     height: 491px;
 }
 
+.container-content {
+    border: solid 1px red;
+}
+
+.container-content_externo {
+    border: sloid 1px blue;
+}
+
 
 #Container-sidebar > p {
     color: black;

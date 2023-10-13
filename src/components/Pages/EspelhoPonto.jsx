@@ -24,10 +24,18 @@ function EspelhoPonto() {
            <p style={{color: "black"}}>Espelho</p>
           </div>
         </div>
+
       </div>
 
       <div id="content">
-        <p>Conteúdo</p>
+        <div className="container-content">
+          <div className="container-content_externo">
+            <h1>Espelho</h1>
+              <div>
+                
+              </div>
+          </div>
+        </div>
       </div>
 
     </div>
