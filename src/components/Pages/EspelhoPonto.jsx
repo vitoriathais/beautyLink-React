@@ -18,9 +18,6 @@ function EspelhoPonto() {
       <div id="content">
         <p>Conteúdo</p>
       </div>
-      <div id="footer">
-        <p>Rodapé</p>
-      </div>
     </div>
   )
 }

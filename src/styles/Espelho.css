@@ -22,17 +22,19 @@
 
 #header {
     grid-area: header;
-    
+    height: 0vh;
 }
 
 #sidebar {
     grid-area: sidebar;
-    height: 50vh;
+    width: 15vh;
+    height: 55vh;
 }
 
 #content {
     grid-area: content;
-    height: 50vh;
+    width: 99vh;
+    height: 55vh;
 }
 
 #footer {
