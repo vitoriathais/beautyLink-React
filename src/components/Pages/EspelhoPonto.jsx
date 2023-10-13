@@ -29,8 +29,8 @@ function EspelhoPonto() {
 
       <div id="content">
         <div className="container-content">
+        <h1>Espelho</h1>
           <div className="container-content_externo">
-            <h1>Espelho</h1>
               <div>
                 
               </div>
