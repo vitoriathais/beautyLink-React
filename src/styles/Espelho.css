@@ -2,6 +2,7 @@
 .container-espelho {
         background-color: #333;
         border: 3px solid red;
+        color: black;
         width: 1020px;
         height: 577px;
         padding: 15px;
@@ -15,7 +16,7 @@
 
 
 .container-espelho > div {
-    background-color: #ccc;
+    background-color: #ffffff;
     padding: 20px;
     border: 1px solid blue;
 }
@@ -40,4 +41,16 @@
 
 #footer {
     grid-area: footer;
+}
+
+.Container-sidebar {
+border: solid 1px green;
+}
+
+.Container-sidebar__Espelho {
+    border: solid 1px grey;
+}
+
+.Container-sidebar__Ponto {
+    border: solid 1px yellow;
 }

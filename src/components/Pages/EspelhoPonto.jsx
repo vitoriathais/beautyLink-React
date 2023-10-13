@@ -9,15 +9,27 @@ const dados = [
 function EspelhoPonto() {
   return (
     <div className="container-espelho" id="template-areas">
+
       <div id="header">
-        <p>Cabçalho</p>
+        <p>Cabeçalho</p>
       </div>
+
       <div id="sidebar">
-        <p>Sidebar</p>
+
+        <div className="Container-sidebar">
+          <div className="Container-sidebar__Ponto">
+            <p>Bater Ponto</p>
+          </div>
+          <div className="Container-sidebar__Espelho">
+           <p>Espelho Ponto</p>
+          </div>
+        </div>
       </div>
+
       <div id="content">
         <p>Conteúdo</p>
       </div>
+
     </div>
   )
 }
