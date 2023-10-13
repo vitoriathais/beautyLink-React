@@ -30,15 +30,16 @@
 #sidebar {
     display: flex;
     flex-direction: column;
-    width: 225px;
-    margin-left: -21px;
-    margin-top: -15px;
+    width: 227px;
+    margin-left: 0px;
+    margin-top: 0px;
+    height: 490px;
 }
 
 #content {
     grid-area: content;
-    width: 105vh;
-    height: 69vh;
+    width: 702px;
+    height: 491px;
 }
 
 
