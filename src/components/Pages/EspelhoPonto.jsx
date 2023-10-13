@@ -28,6 +28,7 @@ function EspelhoPonto() {
       </div>
 
       <div id="content">
+        <button>&lt;</button>
         <h1>Espelho</h1>
           <div className="container-content">
 

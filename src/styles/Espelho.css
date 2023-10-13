@@ -41,6 +41,22 @@
     background-color: #e9e9e9;
 }
 
+#content > h1 {
+    color: black;
+    font-size: 28px;
+    display: flex;
+    align-content: flex-start;
+    margin-left: 12px;
+    margin-bottom: -12px;
+    margin-top: -14px;
+}
+
+#content > button {
+    border: solid 1px black;
+    background-color:grey;
+    
+}
+
 .container-content {
     border: solid 1px red;
     background-color: white;
