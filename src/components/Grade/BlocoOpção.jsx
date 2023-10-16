@@ -1,6 +1,6 @@
-/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 import React from 'react' 
+import { useState } from 'react';
 
 const BlocoOpção = () => {
     const [isOpen, setIsOpen] = useState(false);
