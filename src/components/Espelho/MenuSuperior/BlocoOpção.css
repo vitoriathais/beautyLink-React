@@ -25,7 +25,7 @@
 }
 
 .dropdown button:hover, .dropdown button:focus {
-  background-color: #3e8e41;
+  border: solid 1.5px black;
 }
 
 .dropdown .options {
@@ -42,6 +42,7 @@
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+
 }
 
 .dropdown .options li:hover {
@@ -50,6 +51,7 @@
 
 .dropdown .options.show {
   display: block; /* As opções são mostradas quando a classe 'show' é adicionada */
+  margin-top: 72px;
 }
 
 .dropdown > p {

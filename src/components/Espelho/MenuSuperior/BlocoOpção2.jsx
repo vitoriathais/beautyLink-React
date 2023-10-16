@@ -2,6 +2,7 @@
 import React from 'react' 
 import { useState } from 'react';
 import './BlocoOpção.css'
+import '../Grade.css'
 
 const BlocoOpção2 = () => {
     const [isOpen, setIsOpen] = useState(false);
