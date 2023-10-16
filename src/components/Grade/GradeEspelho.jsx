@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-import React from 'react' 
 import BlocoOpção from './BlocoOpção';
 
 function GradeEspelho() {
@@ -12,4 +10,4 @@ function GradeEspelho() {
 
 }
 
- export default GradeEspelho();
+ export default GradeEspelho;
