@@ -6,7 +6,7 @@ import './BlocoOpção.css';
 const BlocoOpção1 = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedOption, setSelectedOption] = useState('Clique aqui');
-    const options = ['Opção 1', 'Opção 2', 'Opção 3'];
+    const options = ['Último mês', 'Essa semana', 'Últimos dois meses'];
   
     return (
       <div className="dropdown">
