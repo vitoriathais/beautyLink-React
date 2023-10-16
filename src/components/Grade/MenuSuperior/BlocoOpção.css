@@ -7,7 +7,7 @@
   }
   
   .dropdown > button {
-        border-radius: -6px;
+        border-radius: 0px;
         border: 1px solid black;
         padding: 0.6em 1.2em;
         font-size: 1em;
@@ -57,7 +57,7 @@
     color: black;
   }
 
-  .dropdown > span {
+  .arrow-down {
     margin-left: 20px;
     color: black;
   }

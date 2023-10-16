@@ -1,9 +1,9 @@
-import BlocoOpção1 from './BlocoOpção1';
-import BlocoOpção2 from './BlocoOpção2';
+import BlocoOpção1 from './MenuSuperior/BlocoOpção1';
+import BlocoOpção2 from './MenuSuperior/BlocoOpção2';
 
 function GradeEspelho() {
     return (
-        <div className=''>
+        <div className='Grade-Menu-Superior'>
             <BlocoOpção1/>
             <BlocoOpção2/>
 
