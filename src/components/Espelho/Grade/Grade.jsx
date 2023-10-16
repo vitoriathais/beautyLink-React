@@ -7,7 +7,7 @@ const TabelaDados = () => {
 
   useEffect(() => {
     // Substitua 'http://localhost:5000/sua-rota' pelo URL da sua API Flask
-    fetch('https://batida-de-ponto-api-flask.vercel.app/sua-rota')
+    fetch('https://batida-de-ponto-api-flask.vercel.app/Espelho')
       .then(response => response.json())
       .then(data => setDados(data));
   }, []);
