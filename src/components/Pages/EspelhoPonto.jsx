@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import '../../styles/Espelho.css'
+import GradeEspelho from '../Grade/GradeEspelho';
 
 const dados = [
     { data: '10/10/2023', entradaSaida: '08:00/18:00', horasExtras: '2', horasFaltas: '0', saldo: '2', solicitacao: 'N/A', acoes: '✔️' },
@@ -31,6 +32,7 @@ function EspelhoPonto() {
         <button>&lt;</button>
         <h1>Espelho</h1>
           <div className="container-content">
+          <GradeEspelho/>
 
           </div>
       </div>
