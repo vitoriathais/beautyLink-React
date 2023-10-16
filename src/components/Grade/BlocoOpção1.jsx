@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
-import React from 'react' 
+import React from 'react';
 import { useState } from 'react';
+import './BlocoOpção.css';
 
-const BlocoOpção = () => {
+const BlocoOpção1 = () => {
     const [isOpen, setIsOpen] = useState(false);
     const options = ['Opção 1', 'Opção 2', 'Opção 3'];
   
@@ -13,15 +14,13 @@ const BlocoOpção = () => {
           Clique aqui
           <span className="arrow-down">▼</span>
         </button>
-        {isOpen && (
-          <ul className="options">
-            {options.map((option, index) => (
-              <li key={index}>{option}</li>
-            ))}
-          </ul>
-        )}
+        <ul className={`options ${isOpen ? 'show' : ''}`}>
+          {options.map((option, index) => (
+            <li key={index}>{option}</li>
+          ))}
+        </ul>
       </div>
     );
-  };
+};
 
-  export default BlocoOpção
+export default BlocoOpção1
