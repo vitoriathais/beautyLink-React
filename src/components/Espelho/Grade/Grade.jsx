@@ -1,26 +1,27 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
+import '../Grade.css'
 
 const TabelaDados = () => {
   const [dados, setDados] = useState([]);
 
   useEffect(() => {
     // Substitua 'http://localhost:5000/sua-rota' pelo URL da sua API Flask
-    fetch('http://localhost:5000/sua-rota')
+    fetch('https://batida-de-ponto-api-flask.vercel.app/sua-rota')
       .then(response => response.json())
       .then(data => setDados(data));
   }, []);
 
   return (
+    <div className="Container_Grade">
     <table>
       <thead>
         <tr>
-          {/* Substitua 'coluna1', 'coluna2', etc. pelos nomes das suas colunas */}
+          {/*Nome Colunas*/}
           <th>Horário entrada</th>
           <th>Horário saída</th>
           <th>Horas extra</th>
           <th>Saldo</th>
-          {/* Adicione mais colunas conforme necessário */}
         </tr>
       </thead>
       <tbody>
@@ -36,6 +37,7 @@ const TabelaDados = () => {
         ))}
       </tbody>
     </table>
+    </div>
   );
 };
 

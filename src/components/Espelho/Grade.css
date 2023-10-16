@@ -1,3 +1,9 @@
 .Grade-Menu-superior {
     display: flex;
 }
+
+.Container_Grade {
+    border: solid 1px black;
+    color: black;
+    margin-top: 40px;
+}
