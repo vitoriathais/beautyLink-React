@@ -5,20 +5,28 @@ import './BlocoOpção.css';
 
 const BlocoOpção1 = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [selectedOption, setSelectedOption] = useState('Clique aqui');
     const options = ['Opção 1', 'Opção 2', 'Opção 3'];
   
     return (
       <div className="dropdown">
         <p>Início - Término</p>
         <button onClick={() => setIsOpen(!isOpen)}>
-          Clique aqui
+          {selectedOption}
           <span className="arrow-down">▼</span>
         </button>
-        <ul className={`options ${isOpen ? 'show' : ''}`}>
-          {options.map((option, index) => (
-            <li key={index}>{option}</li>
-          ))}
-        </ul>
+        {isOpen && (
+          <ul className={`options ${isOpen ? 'show' : ''}`}>
+            {options.map((option, index) => (
+              <li key={index} onClick={() => {
+                setSelectedOption(option);
+                setIsOpen(false);
+              }}>
+                {option}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     );
 };

@@ -4,7 +4,7 @@ import '../Espelho/Grade.css'
 
 function GradeEspelho() {
     return (
-        <div className="Grade-Menu-Superior">
+        <div style={{display: 'flex'}}>
             <BlocoOpção1/>
             <BlocoOpção2/>
 
