@@ -1,6 +1,6 @@
 import BlocoOpção1 from './MenuSuperior/BlocoOpção1';
 import BlocoOpção2 from './MenuSuperior/BlocoOpção2';
-import './Grade.css'
+import '../Espelho/Grade.css'
 
 function GradeEspelho() {
     return (
