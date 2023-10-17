@@ -7,3 +7,13 @@
     color: black;
     margin-top: 40px;
 }
+
+
+.Container_Grade_Cabeçalho > th {
+    color: black;
+}
+
+
+.Container_Grade_Results > td {
+    color: black;
+}
