@@ -17,11 +17,12 @@
 }
 
 
-.Container_Grade_Results > td {
+.Container_Grade-Results > td {
     color: black;
+    margin-right: -14px;
 }
 
-.Container_Grade_Results > hr {
+.Container_Grade-hr > hr {
     height: 1px;
     border: solid 1px black;
     background-color: black;
