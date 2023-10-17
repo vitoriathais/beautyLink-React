@@ -3,14 +3,23 @@ import React, { useEffect, useState } from 'react';
 import '../Grade.css'
 
 const TabelaDados = () => {
-  const [dados, setDados] = useState([]);
-
-  useEffect(() => {
-    // Substitua 'http://localhost:5000/sua-rota' pelo URL da sua API Flask
-    fetch('https://batida-de-ponto-api-flask.vercel.app/Espelho')
-      .then(response => response.json())
-      .then(data => setDados(data));
-  }, []);
+  const dadosFicticios = [
+    {
+      'Data': 'Terça-Feira / 2023-10-17',
+      'Horario entrada': '08:00',
+      'Horario saída': '17:00',
+      'Horas extra': '01:20',
+      'Saldo': '00:30'
+    },
+    {
+      'Data': '2023-10-18',
+      'Horario entrada': '08:30',
+      'Horario saída': '17:30',
+      'Horas extra': '000:00',
+      'Saldo': '-00:15'
+    },
+    // Adicione mais objetos aqui para testar diferentes cenários
+  ];
 
   return (
     <div className="Container_Grade">
@@ -30,15 +39,13 @@ const TabelaDados = () => {
       <div>
       <hr></hr>
       <tbody className="Container_Grade_Results">
-        {dados.map((linha, index) => (
+       {dadosFicticios.map((linha, index) => (
           <tr key={index}>
-            {/* Substitua 'coluna1', 'coluna2', etc. pelos nomes das suas colunas */}
             <td>{linha['Data']}</td>
             <td>{linha['Horario entrada']}</td>
             <td>{linha['Horario saída']}</td>
             <td>{linha['Horas extra']}</td>
             <td>{linha['Saldo']}</td>
-            {/* Adicione mais colunas conforme necessário */}
           </tr>
         ))}
       </tbody>

@@ -82,7 +82,6 @@ function Cadastro() {
 
         <button className="style-cadastrar" onClick={handleCriarUsuario}>Cadastrar</button>
 
-                    <p className="style-pergunta">Deseja ir para a página de login?</p>
                     <button className="style-criar-cadastro" onClick={linkEspelho}>Espelho</button>
       </div>
   );
