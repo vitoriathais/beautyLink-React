@@ -15,6 +15,7 @@ const TabelaDados = () => {
   return (
     <div className="Container_Grade">
     <table>
+      <div>
       <thead>
         <tr className="Container_Grade_Cabeçalho">
           {/*Nome Colunas*/}
@@ -24,8 +25,10 @@ const TabelaDados = () => {
           <th>Horas extra</th>
           <th>Saldo</th>
         </tr>
-        <tr/>
       </thead>
+      </div>
+      <div>
+      <hr></hr>
       <tbody className="Container_Grade_Results">
         {dados.map((linha, index) => (
           <tr key={index}>
@@ -39,6 +42,7 @@ const TabelaDados = () => {
           </tr>
         ))}
       </tbody>
+      </div>
     </table>
     </div>
   );
