@@ -34,10 +34,12 @@ const TabelaDados = () => {
           <th>Saldo</th>
         </tr>
       </thead>
-      
-      <tbody className="Container_Grade_Results">
+
+      <hr></hr>
+
+      <tbody>
        {dadosFicticios.map((linha, index) => (
-          <tr key={index}>
+          <tr className="Container_Grade_Results"  key={index}>
             <td>{linha['Data']}</td>
             <td>{linha['Horario entrada']}</td>
             <td>{linha['Horario saída']}</td>
