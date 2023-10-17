@@ -9,27 +9,24 @@
     justify-content: center;
 }
 
-
 .Container_Grade_Cabeçalho > th {
     color: black;
     padding: 25px;
     font-weight: 600;
 }
 
-
-.Container_Grade-Results > td {
+.Container_Grade_Results > td {
     color: black;
     margin-right: -14px;
 }
 
-.Container_Grade-hr > hr {
-    height: 1px;
-    border: solid 1px black;
-    background-color: black;
-    margin-top: -16px;
+hr {
+    height: 5px; /* Ajuste a altura conforme necessário */
+    background-color: blue; /* Ajuste a cor conforme necessário */
+    border: none;
 }
 
-.Container_Grade-Results > td {
+.Container_Grade_Results > td {
     padding: 15px;
     text-align: left;
     color: black;

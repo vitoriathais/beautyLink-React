@@ -24,7 +24,6 @@ const TabelaDados = () => {
   return (
     <div className="Container_Grade">
     <table>
-      <div>
       <thead>
         <tr className="Container_Grade_Cabeçalho">
           {/*Nome Colunas*/}
@@ -35,12 +34,10 @@ const TabelaDados = () => {
           <th>Saldo</th>
         </tr>
       </thead>
-      </div>
-      <div className="Container_Grade-hr">
-      <hr></hr>
-      <tbody>
+      
+      <tbody className="Container_Grade_Results">
        {dadosFicticios.map((linha, index) => (
-          <tr className="Container_Grade-Results" key={index}>
+          <tr key={index}>
             <td>{linha['Data']}</td>
             <td>{linha['Horario entrada']}</td>
             <td>{linha['Horario saída']}</td>
@@ -49,7 +46,7 @@ const TabelaDados = () => {
           </tr>
         ))}
       </tbody>
-      </div>
+
     </table>
     </div>
   );
