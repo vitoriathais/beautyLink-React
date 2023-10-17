@@ -18,7 +18,7 @@ const TabelaDados = () => {
       <thead>
         <tr className="Container_Grade_Cabeçalho">
           {/*Nome Colunas*/}
-          <tr>Data</tr>
+          <th>Data</th>
           <th>Horário entrada</th>
           <th>Horário saída</th>
           <th>Horas extra</th>
