@@ -6,12 +6,14 @@
     border: solid 1px black;
     color: black;
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 
 .Container_Grade_Cabeçalho > th {
     color: black;
-    margin-right: 5px;
+    padding: 5px;
 }
 
 
