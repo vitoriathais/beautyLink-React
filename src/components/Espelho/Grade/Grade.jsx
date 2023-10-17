@@ -24,6 +24,7 @@ const TabelaDados = () => {
           <th>Horas extra</th>
           <th>Saldo</th>
         </tr>
+        <tr/>
       </thead>
       <tbody className="Container_Grade_Results">
         {dados.map((linha, index) => (

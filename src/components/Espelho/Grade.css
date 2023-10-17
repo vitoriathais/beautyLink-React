@@ -13,7 +13,8 @@
 
 .Container_Grade_Cabeçalho > th {
     color: black;
-    padding: 5px;
+    padding: 25px;
+    font-weight: 600;
 }
 
 
