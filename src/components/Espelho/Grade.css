@@ -20,3 +20,10 @@
 .Container_Grade_Results > td {
     color: black;
 }
+
+.Container_Grade_Results > hr {
+    height: 1px;
+    border: solid 1px black;
+    background-color: black;
+    margin-top: -16px;
+}
