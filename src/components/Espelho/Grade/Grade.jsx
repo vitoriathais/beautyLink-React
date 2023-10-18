@@ -35,8 +35,6 @@ const TabelaDados = () => {
         </tr>
       </thead>
 
-      <hr></hr>
-
       <tbody>
        {dadosFicticios.map((linha, index) => (
           <tr className="Container_Grade_Results"  key={index}>
