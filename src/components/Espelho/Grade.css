@@ -3,10 +3,11 @@
 }
 
 .Container_Grade {
-    color: black;
+    color: #000;
     margin-top: 40px;
     display: flex;
     justify-content: center;
+    padding: 0px 30px 5px 30px;
 }
 
 .Container_Grade_Cabeçalho > th {
