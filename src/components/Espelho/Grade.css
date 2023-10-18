@@ -20,7 +20,7 @@
     margin-right: -14px;
 }
 
-hr {
+.Container_Grade > hr {
     height: 5px; /* Ajuste a altura conforme necessário */
     background-color: blue; /* Ajuste a cor conforme necessário */
     border: none;
