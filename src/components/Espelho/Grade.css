@@ -29,5 +29,11 @@ hr {
 .Container_Grade_Results > td {
     text-align: center;
     color: black;
-    padding-right: 79px;
+}
+
+
+
+.Container_Grade_Results > hr {
+    color: black;
+    width:100%
 }
