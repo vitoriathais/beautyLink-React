@@ -27,10 +27,11 @@
 .Container_Grade_Results > td {
     text-align: center;
     color: black;
+    border-bottom: 1px solid rgb(175, 175, 175);
 }
 
 
 
-.Container_Grade_Results {
-    border-bottom: 1px solid black;
+.Container_Grade_Cabeçalho {
+    margin-bottom: 1px solid blue;
 }
