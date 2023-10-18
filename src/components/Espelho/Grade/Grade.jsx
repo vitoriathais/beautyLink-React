@@ -41,13 +41,9 @@ const TabelaDados = () => {
        {dadosFicticios.map((linha, index) => (
           <tr className="Container_Grade_Results"  key={index}>
             <td>{linha['Data']}</td>
-            <hr></hr>
             <td>{linha['Horario entrada']}</td>
-            <hr></hr>
             <td>{linha['Horario saída']}</td>
-            <hr></hr>
             <td>{linha['Horas extra']}</td>
-            <hr></hr>
             <td>{linha['Saldo']}</td>
           </tr> 
         ))}

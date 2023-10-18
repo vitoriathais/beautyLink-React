@@ -20,10 +20,8 @@
     margin-right: -14px;
 }
 
-.Container_Grade > hr {
-    height: 5px; /* Ajuste a altura conforme necessário */
-    background-color: blue; /* Ajuste a cor conforme necessário */
-    border: none;
+.Container_Grade > thead {
+    border-bottom: 5px solid rgba(0, 0, 255, 0.767);;
 }
 
 .Container_Grade_Results > td {
@@ -33,7 +31,6 @@
 
 
 
-.Container_Grade_Results > hr {
-    color: black;
-    width:100%
+.Container_Grade_Results {
+    border-bottom: 1px solid black;
 }
