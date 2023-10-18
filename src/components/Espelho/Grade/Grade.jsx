@@ -8,7 +8,7 @@ const TabelaDados = () => {
   useEffect(() => {
     fetch('https://batida-de-ponto-api-flask.vercel.app/Espelho')
       .then(response => response.json())
-      .then(data => setDados([data]));
+      .then(data => setDados([data['Saldo Mensal'], data['Horario entrada'], data['Horario saida'], data['Data'], data['Horas extra']]));
   }, []);
 
   return (
@@ -28,9 +28,9 @@ const TabelaDados = () => {
       <tbody>
        {dados.map((linha, index) => (
           <tr className="Container_Grade_Results"  key={index}>
-            <td>{linha['Data']}</td>
+            <td>{linha.Data}</td>
             <td>{linha['Horario entrada']}</td>
-            <td>{linha['Horario saída']}</td>
+            <td>{linha['Horario saida']}</td>
             <td>{linha['Horas extra']}</td>
             <td>{linha['Saldo Mensal']}</td>
           </tr> 
