@@ -13,7 +13,7 @@ const TabelaDados = () => {
 
   return (
     <div className="Container_Grade">
-      <div style={{ overflowY: 'auto', maxHeight: '500px' }}>
+      <div style={{ overflow: 'auto', maxHeight: '500px' }}>
         <table>
           <thead>
             <tr className="Container_Grade_Cabeçalho">
