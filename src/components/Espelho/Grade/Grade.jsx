@@ -26,7 +26,7 @@ const TabelaDados = () => {
             </tr>
           </thead>
 
-          <tbody style={{ overflow: 'auto', maxHeight: '296px' }}>
+          <tbody>
             {dados && dados.map((linha, index) => (
               linha && <tr className="Container_Grade_Results" key={index}>
                 <td>{linha['Data']}</td>
