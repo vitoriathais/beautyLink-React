@@ -13,7 +13,7 @@ const TabelaDados = () => {
 
   return (
     <div className="Container_Grade">
-      <div style={{ overflow: 'auto', maxHeight: '500px' }}>
+      <div>
         <table>
           <thead>
             <tr className="Container_Grade_Cabeçalho">
@@ -26,7 +26,7 @@ const TabelaDados = () => {
             </tr>
           </thead>
 
-          <tbody>
+          <tbody style={{ overflow: 'auto', maxHeight: '296px' }}>
             {dados && dados.map((linha, index) => (
               linha && <tr className="Container_Grade_Results" key={index}>
                 <td>{linha['Data']}</td>
