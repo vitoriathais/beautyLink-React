@@ -8,7 +8,7 @@ const TabelaDados = () => {
   useEffect(() => {
     fetch('https://batida-de-ponto-api-flask.vercel.app/Espelho')
       .then(response => response.json())
-      .then(data => setDados([data]));
+      .then(data => setDados(data));
   }, []);
 
   return (
