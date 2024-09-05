@@ -2,14 +2,15 @@
 import React, { useEffect, useState } from 'react';
 import '../Grade.css'
 
-const TabelaDados = () => {
+// eslint-disable-next-line react/prop-types
+const Grade = ({ apiUrl }) => {
   const [dados, setDados] = useState([]);
 
   useEffect(() => {
-    fetch('https://batida-de-ponto-api-flask.vercel.app/Espelho')
+    fetch(apiUrl)
       .then(response => response.json())
       .then(data => setDados(data));
-  }, []);
+  }, [apiUrl]);
 
   return (
     <div className="Container_Grade">
@@ -17,7 +18,6 @@ const TabelaDados = () => {
         <table>
           <thead>
             <tr className="Container_Grade_Cabeçalho">
-              {/*Nome Colunas*/}
               <th>Data</th>
               <th>Horário entrada</th>
               <th>Horário saída</th>
@@ -44,4 +44,4 @@ const TabelaDados = () => {
   );
 };
 
-export default TabelaDados;
+export default Grade;
