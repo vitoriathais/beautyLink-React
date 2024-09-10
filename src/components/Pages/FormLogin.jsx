@@ -24,7 +24,7 @@ function FormLogin() {
             window.alert('Por favor, insira o usuário e a senha.');
             return; }
 
-        axios.post('https://batida-de-ponto-api-flask.vercel.app/Login', {
+        axios.post('https://beauty-link-react.vercel.app/Login', {
             usuario: usuario,
             senha: senha
         })
