@@ -15,7 +15,7 @@ function Cadastro() {
     }
 
     try {
-      const response = await axios.post('https://batida-de-ponto-api-flask.vercel.app/cadastro', novoUsuario);
+      const response = await axios.post('https://beauty-link-python.vercel.app/cadastro', novoUsuario);
       alert(response.data.message);
       navigate('/');
     } catch (error) {
