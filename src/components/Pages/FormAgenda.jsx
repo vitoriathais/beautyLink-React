@@ -22,7 +22,7 @@ function ConfirmAcao({mensagem, onConfirm, onCancel}) {
 
 
 
-function FormPonto() {
+function FormAgenda() {
     const { user } = useContext(UserContext);
     const [mostrarModal, setMostrarModal] = useState(false);
     const navigate = useNavigate();
@@ -35,7 +35,7 @@ function FormPonto() {
     
     // Função para obter a hora da API
     const atualizarHora = () => {
-        axios.get('https://batida-de-ponto-api-flask.vercel.app/Hora')
+        axios.get('https://beauty-link-python.vercel.app/Hora')
             .then(response => {
                 // Atualiza o estado com a hora retornada pela API
                 setHora(response.data.hora);
@@ -53,12 +53,12 @@ function FormPonto() {
 
 
 
-    const BaterPonto = (e) => {
+    const AgendarAtendimento = (e) => {
         e.preventDefault();
     
         console.log(`Usuário ${user} bateu ponto`);
     
-        axios.post('https://batida-de-ponto-api-flask.vercel.app/Ponto', {
+        axios.post('https://https://beauty-link-python.vercel.app/Ponto', {
             usuario: user,
         },
         {
@@ -67,7 +67,7 @@ function FormPonto() {
         .then((response) => {
             console.log(response.data.message);
             if (response.data.message === 'Ponto batido com sucesso') {
-                window.alert('Ponto Batido com sucesso!');
+                window.alert('Agendamento marcado com sucesso!');
                 navigate('/');
             }
         })
@@ -87,8 +87,8 @@ function FormPonto() {
 
     return(
         <div className="wrap-ponto">
-            <h1 className="login-form-title">Batida de Ponto:</h1>
-            <form onSubmit={BaterPonto}>
+            <h1 className="login-form-title">Agende seu Atendimento</h1>
+            <form onSubmit={AgendarAtendimento}>
 
                 <div className="identificaçao">
                     <label className="title-label-usuario" htmlFor="usuario">Usuario: </label>
@@ -111,8 +111,8 @@ function FormPonto() {
 
                 {mostrarModal && (
                     <ConfirmAcao
-                    mensagem = {`Você está batendo ponto?`}
-                    onCofirm={() => { BaterPonto(); setMostrarModal(false);}}
+                    mensagem = {`Você confirma este horário para seu atendimento?`}
+                    onCofirm={() => { AgendarAtendimento(); setMostrarModal(false);}}
                     onCancel={() => setMostrarModal(false)}
                     />
                 )}
@@ -121,4 +121,4 @@ function FormPonto() {
     )
 }
 
-export default FormPonto;
+export default FormAgenda;
