@@ -1,5 +1,8 @@
 import Header from '../Header';
-import '../../styles/Header.css'; // Importa o CSS global
+import '../../styles/Header.css'; // Importa o CSS do cabeçalho
+
+// Importa a imagem como uma variável
+import fundoImagem from '../../assets/Imagens/mulherHome.png';
 
 const HomePage = () => {
   return (
@@ -7,7 +10,7 @@ const HomePage = () => {
       <Header />
       <main className="main-content">
         <img
-          src='../Imagens/mulherHome.png'
+          src={fundoImagem} // Usa a variável para a imagem
           alt="Fundo"
           className="background-image"
         />
