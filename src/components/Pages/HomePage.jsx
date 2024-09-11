@@ -1,4 +1,4 @@
-import Header from '../components/Header';
+import Header from '../Header';
 import '../../styles/Header.css'; // Importa o CSS global
 
 const HomePage = () => {
