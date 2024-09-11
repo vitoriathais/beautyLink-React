@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useContext, useState } from 'react';
 import { UserContext } from './UserContext';
-import '../../styles/Styles.css';
+import '../../styles/Agenda.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
