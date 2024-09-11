@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh; /* Definir altura total da viewport */
-    background-image: url('../Imagens/mulherHome.png'); /* Definir a imagem de fundo */
+    background-image: url('../components/Imagens/mulherHome.png'); /* Definir a imagem de fundo */
     background-size: cover; /* Para garantir que a imagem cubra a tela inteira */
     background-position: center; /* Centralizar a imagem de fundo */
     background-repeat: no-repeat; /* Evitar repetição da imagem */
