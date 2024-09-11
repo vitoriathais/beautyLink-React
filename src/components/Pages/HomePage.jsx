@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import Header from '../Header';
 import '../../styles/Header.css'; // Importa o CSS do cabeçalho
-import '../../styles/HomePage.css'; // Importa o CSS específico da HomePage
+import '../../styles/Home.css'; // Importa o CSS específico da HomePage
 
 // Importa a imagem como uma variável
 import fundoImagem from '../Imagens/mulherGrande.png';
