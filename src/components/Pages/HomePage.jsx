@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import '../../styles/Home.css';
+import mulherHome from '../Imagens/mulherHome.png'; // Importação correta da imagem
 
 const Header = () => {
   return (
@@ -75,7 +76,7 @@ const ProductBar = () => {
   return (
     <div className="product-bar">
       <div className="product-item">
-        <img src="https://via.placeholder.com/300x200" alt="Produto 1" />
+        <img src={mulherHome} alt="Produto 1" /> {/* Uso correto da imagem importada */}
         <p>Produto 1</p>
       </div>
       <div className="product-item">
