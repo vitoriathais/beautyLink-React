@@ -5,7 +5,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import App from './App';
 import FormLogin from './components/Pages/FormLogin';
 import FormCadastro from './components/Pages/FormCadastro';
-import FormPonto from './components/Pages/FormPonto';
+import FormAgenda from './components/Pages/FormAgenda';
 import './index.css'
 import PageError from './components/Pages/PageError';
 import EspelhoPonto from './components/Pages/EspelhoPonto';
@@ -26,7 +26,7 @@ const Rotas=createBrowserRouter([
         },
         {
         path:"/Ponto", 
-        element:<FormPonto/>
+        element:<FormAgenda/>
         },
         {
         path:"/Espelho", 
