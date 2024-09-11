@@ -1,6 +1,29 @@
-/* Home.css */
-body {
+/* src/styles.css */
+html, body {
     margin: 0;
     padding: 0;
-    background-image: url('../components/Imagens/mulherHome.png'); /* Definir a imagem de fundo */
-  };
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .home-page {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .main-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ocupa toda a largura da tela */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    object-fit: cover; /* Ajusta a imagem para cobrir a tela mantendo a proporção */
+  }
+  

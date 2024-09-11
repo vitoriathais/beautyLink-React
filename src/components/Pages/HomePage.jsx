@@ -1,5 +1,6 @@
 import Header from '../Header';
-import '../../styles/Header.css'; // Importa o CSS do cabeçalho
+import '../../styles/Home.css'; // Importa o CSS do cabeçalho
+import '../../styles/Header.css';
 
 // Importa a imagem como uma variável
 import fundoImagem from '../Imagens/mulherGrande.png';
