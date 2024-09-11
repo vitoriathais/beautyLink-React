@@ -9,7 +9,7 @@ html, body {
   .background-image {
     position: absolute;
     top: 65;
-    left: -1437px;
+    left: -1118px;
     width: 100vw; /* Ocupa toda a largura da tela */
     height: 100vh; /* Ocupa toda a altura da tela */
     object-fit: cover; /* Ajusta a imagem para cobrir a tela mantendo a proporção */
