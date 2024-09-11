@@ -9,6 +9,7 @@ import FormPonto from './components/Pages/FormPonto';
 import './index.css'
 import PageError from './components/Pages/PageError';
 import EspelhoPonto from './components/Pages/EspelhoPonto';
+import HomePage from './components/Pages/HomePage';
 
 const Rotas=createBrowserRouter([
     { path: "/", 
@@ -16,10 +17,9 @@ const Rotas=createBrowserRouter([
     errorElement: <PageError/>,
     children: [
         {
-        path:"/", 
+        path:"/Login", 
         element: <FormLogin/>
         },
-
         {
         path:"/Cadastro", 
         element: <FormCadastro/>
@@ -31,6 +31,10 @@ const Rotas=createBrowserRouter([
         {
         path:"/Espelho", 
         element:<EspelhoPonto/>
+        },
+        {
+        path:"/", 
+        element:<HomePage/>
         }
       ],
     },
