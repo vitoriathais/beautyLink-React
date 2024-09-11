@@ -21,7 +21,7 @@ html, body {
   .background-image {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -1437px;
     width: 100vw; /* Ocupa toda a largura da tela */
     height: 100vh; /* Ocupa toda a altura da tela */
     object-fit: cover; /* Ajusta a imagem para cobrir a tela mantendo a proporção */
