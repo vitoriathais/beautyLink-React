@@ -2,7 +2,7 @@ import Header from '../Header';
 import '../../styles/Header.css'; // Importa o CSS do cabeçalho
 
 // Importa a imagem como uma variável
-import fundoImagem from '../../assets/Imagens/mulherHome.png';
+import fundoImagem from '../Imagens/mulherHome.png';
 
 const HomePage = () => {
   return (
