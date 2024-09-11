@@ -7,7 +7,7 @@ const HomePage = () => {
       <Header />
       <main className="main-content">
         <img
-          src="../assets/Imagens/mulherHome.png"
+          src='../Imagens/mulherHome.png'
           alt="Fundo"
           className="background-image"
         />
