@@ -6,7 +6,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   const linkLogin = () => {
-    navigate('/');
+    navigate('/Login');
   };
 
   return (
