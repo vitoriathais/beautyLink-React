@@ -1,7 +1,7 @@
 // App.jsx
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import './styles/Home.css';
+import '../../styles/Home.css';
 
 const Header = () => {
   return (
