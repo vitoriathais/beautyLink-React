@@ -1,5 +1,5 @@
 // src/components/Header.js
-import './Header.css'; // Importa o CSS do cabeçalho
+import '../styles/Header.css'; // Importa o CSS do cabeçalho
 
 const Header = () => {
   return (
